@@ -34,7 +34,6 @@ and:
 ## Real world examples
 
 * [java.util.concurrent.CompletableFuture](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html)
-* [Guava ListenableFuture](https://github.com/google/guava/wiki/ListenableFutureExplained)
 
 ## Related Patterns
  * Async Method Invocation

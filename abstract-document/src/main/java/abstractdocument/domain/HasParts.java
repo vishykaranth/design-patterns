@@ -20,18 +20,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractdocument;
+package abstractdocument.domain;
 
-import org.junit.jupiter.api.Test;
+import java.util.stream.Stream;
+
+import abstractdocument.Document;
+import abstractdocument.domain.enums.Property;
 
 /**
- * Simple App test
+ * HasParts trait for static access to 'parts' property
  */
-public class AppTest {
+public interface HasParts extends Document {
 
-  @Test
-  public void shouldExecuteAppWithoutException() {
-    App.main(null);
+
+  default Stream<Part> getParts() {
+    return children(Property.PARTS.toString(), Part::new);
   }
 
 }

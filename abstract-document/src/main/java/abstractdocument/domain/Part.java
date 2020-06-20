@@ -20,20 +20,19 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractdocument.domain;
+package abstractdocument.domain;
 
-import java.util.Optional;
+import java.util.Map;
 
-import com.iluwatar.abstractdocument.Document;
-import com.iluwatar.abstractdocument.domain.enums.Property;
+import abstractdocument.AbstractDocument;
 
 /**
- * HasModel trait for static access to 'model' property
+ * Part entity
  */
-public interface HasModel extends Document {
+public class Part extends AbstractDocument implements HasType, HasModel, HasPrice {
 
-  default Optional<String> getModel() {
-    return Optional.ofNullable((String) get(Property.MODEL.toString()));
+  public Part(Map<String, Object> properties) {
+    super(properties);
   }
 
 }

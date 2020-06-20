@@ -20,19 +20,18 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractdocument.domain;
+package abstractdocument;
 
-import java.util.Map;
-
-import com.iluwatar.abstractdocument.AbstractDocument;
+import org.junit.jupiter.api.Test;
 
 /**
- * Car entity
+ * Simple App test
  */
-public class Car extends AbstractDocument implements HasModel, HasPrice, HasParts {
+public class AppTest {
 
-  public Car(Map<String, Object> properties) {
-    super(properties);
+  @Test
+  public void shouldExecuteAppWithoutException() {
+    App.main(null);
   }
 
 }

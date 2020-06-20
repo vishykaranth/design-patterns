@@ -20,21 +20,20 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractdocument.domain;
+package abstractdocument.domain;
 
-import java.util.stream.Stream;
+import java.util.Optional;
 
-import com.iluwatar.abstractdocument.Document;
-import com.iluwatar.abstractdocument.domain.enums.Property;
+import abstractdocument.Document;
+import abstractdocument.domain.enums.Property;
 
 /**
- * HasParts trait for static access to 'parts' property
+ * HasModel trait for static access to 'model' property
  */
-public interface HasParts extends Document {
+public interface HasModel extends Document {
 
-
-  default Stream<Part> getParts() {
-    return children(Property.PARTS.toString(), Part::new);
+  default Optional<String> getModel() {
+    return Optional.ofNullable((String) get(Property.MODEL.toString()));
   }
 
 }

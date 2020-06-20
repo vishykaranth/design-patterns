@@ -172,6 +172,7 @@
 	    <module>commander</module>
 	    <module>typeobjectpattern</module>
         <module>bytecode</module>
+        <module>a-design-pattern</module>
     </modules>
 
     <repositories>
@@ -282,11 +283,7 @@
                 <version>${mockito.version}</version>
                 <scope>test</scope>
             </dependency>
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${guava.version}</version>
-            </dependency>
+
             <dependency>
                 <groupId>net.sourceforge.htmlunit</groupId>
                 <artifactId>htmlunit</artifactId>

@@ -20,7 +20,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractdocument;
+package abstractdocument;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -30,9 +30,9 @@ import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
-import com.iluwatar.abstractdocument.domain.Car;
-import com.iluwatar.abstractdocument.domain.Part;
-import com.iluwatar.abstractdocument.domain.enums.Property;
+import abstractdocument.domain.Car;
+import abstractdocument.domain.Part;
+import abstractdocument.domain.enums.Property;
 
 /**
  * Test for Part and Car

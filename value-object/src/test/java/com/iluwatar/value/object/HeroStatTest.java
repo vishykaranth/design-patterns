@@ -34,15 +34,7 @@ import static org.junit.Assert.assertThat;
  */
 public class HeroStatTest {
 
-  /**
-   * Tester for equals() and hashCode() methods of a class. Using guava's EqualsTester.
-   * 
-   * @see <a href="http://static.javadoc.io/com.google.guava/guava-testlib/19.0/com/google/common/testing/EqualsTester.html">
-   * http://static.javadoc.io/com.google.guava/guava-testlib/19.0/com/google/common/testing/EqualsTester.html
-   * </a>
-   *
-   *
-   */
+
   @Test
   public void testEquals() {
     HeroStat heroStatA = HeroStat.valueOf(3, 9, 2);

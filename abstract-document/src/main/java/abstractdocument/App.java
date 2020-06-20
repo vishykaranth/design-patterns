@@ -20,7 +20,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractdocument;
+package abstractdocument;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -29,8 +29,8 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.iluwatar.abstractdocument.domain.Car;
-import com.iluwatar.abstractdocument.domain.enums.Property;
+import abstractdocument.domain.Car;
+import abstractdocument.domain.enums.Property;
 
 /**
  * The Abstract Document pattern enables handling additional, non-static
